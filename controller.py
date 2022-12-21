@@ -4,6 +4,9 @@ import rational as ra
 import complex as co
 
 def start_calc():
+    '''
+    Функция действий при выборе раздела меню пользователем
+    '''
     calc_mode = fu.menu_select()
     if calc_mode == 3:
         result = si.work_calc()
