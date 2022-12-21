@@ -2,6 +2,9 @@ import functions as fu
 import logger as log
 
 def work_calc():
+    '''
+    Функция ввода чисел/ вывод результата/ отправка логов
+    '''
     x = fu.give_int_2('Введите первое число: ')
     y = fu.give_int_2('Введите второе число: ')
     oper = oper_choice()
@@ -11,6 +14,9 @@ def work_calc():
     print(expression)
 
 def oper_choice():
+    '''
+    Функция ввода символов
+    '''
     text = '''
     Список символов:
 
@@ -35,6 +41,9 @@ def oper_choice():
         exit()
 
 def sim_cal(x, y, oper):
+    '''
+    Функция выполнения математических операций
+    '''
     result = None
     try:
         if oper == '+':
